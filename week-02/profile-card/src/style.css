@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #ffe4ec;
+  margin: 0; /* margin: removes default page spacing */
+  padding: 40px 16px; /* padding: outer spacing around the page */
+  color: #222;
+}
+
+.bio {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.links a {
+  padding: 8px 16px; /* padding: makes links look like buttons */
+  border: 1px solid #d81b60; /* border: thin outline around each link */
+  border-radius: 8px;
+  text-decoration: none;
+  color: #d81b60;
+  font-size: 14px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.links a:hover {
+  background-color: #d81b60;
+  color: #fff;
+}
+
+footer {
+  margin-top: 40px; /* margin: spacing between card and footer */
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+}
+
+.like-btn {
+  padding: 8px 20px;
+  border: 1px solid #d81b60;
+  border-radius: 8px;
+  background: transparent;
+  color: #d81b60;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.like-btn.liked {
+  background-color: #d81b60;
+  color: #fff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
