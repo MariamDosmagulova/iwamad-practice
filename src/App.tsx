@@ -27,7 +27,7 @@ function App() {
                 <ProfileCard
                     name="Mariam Dosmagulova"
                     bio="I am a third-year IT Management student at KBTU, originally from Semey. I enjoy connecting technology and business, learning new things, and improving my coding skills. This course is my chance to build a real portfolio and grow as a frontend developer."
-                    avatarUrl="/avatar.jpg"
+                    avatarUrl={`${import.meta.env.BASE_URL}avatar.jpg`}
                     links={links}
                     skills={skills}
                 />
