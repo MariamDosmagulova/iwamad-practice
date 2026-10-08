@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import SkillBadge from './SkillBadge';
+import SkillBadge from './SkillBadge'
+import LikeButton from './LikeButton'
 
 type Skill = {
     id: number;
@@ -21,8 +21,6 @@ type ProfileCardProps = {
 };
 
 export default function ProfileCard({ name, bio, avatarUrl, links, skills }: ProfileCardProps) {
-    const [liked, setLiked] = useState(false);
-
     return (
         <div className="p-6 border border-gray-300 mx-auto max-w-[420px] rounded-xl bg-white shadow-md flex flex-col items-center gap-4 text-center">
             {avatarUrl && (
@@ -54,12 +52,7 @@ export default function ProfileCard({ name, bio, avatarUrl, links, skills }: Pro
                 <p className="empty-skills">No skills added yet.</p>
             )}
 
-            <button
-                className={`like-btn ${liked ? 'liked' : ''}`}
-                onClick={() => setLiked(!liked)}
-            >
-                {liked ? 'Liked ❤️' : 'Like'}
-            </button>
+            <LikeButton />
         </div>
     );
 }

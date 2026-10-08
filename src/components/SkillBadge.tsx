@@ -5,8 +5,10 @@ type Skill = {
 
 type SkillBadgeProps = {
     skill: Skill;
+    variant?: 'badge' | 'card';
 };
 
-export default function SkillBadge({ skill }: SkillBadgeProps) {
-    return <li className="skill-badge">{skill.label}</li>;
+export default function SkillBadge({ skill, variant = 'badge' }: SkillBadgeProps) {
+    const className = variant === 'card' ? 'skill-card' : 'skill-badge';
+    return <li className={className}>{skill.label}</li>;
 }
