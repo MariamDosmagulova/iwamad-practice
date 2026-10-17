@@ -4,7 +4,7 @@ import HomePage from './pages/HomePage'
 import SkillsPage from './pages/SkillsPage'
 import ContactPage from './pages/ContactPage'
 import NotFoundPage from './pages/NotFoundPage'
-import './style.css'
+
 
 function App() {
     return (

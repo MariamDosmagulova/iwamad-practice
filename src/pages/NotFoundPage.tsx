@@ -6,7 +6,7 @@ export default function NotFoundPage() {
             <h1>404 — Page Not Found</h1>
             <p>Oops! This page doesn't exist.</p>
             <p>
-                <Link to="/" style={{ color: '#ec4899', fontWeight: 600 }}>
+                <Link to="/" className="back-link">
                     ← Go back home
                 </Link>
             </p>
