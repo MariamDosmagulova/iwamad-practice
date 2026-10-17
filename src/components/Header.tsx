@@ -20,6 +20,7 @@ export default function Header({ title }: HeaderProps) {
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/skills">Skills</NavLink>
                 <NavLink to="/contact">Contact</NavLink>
+                <NavLink to="/register">Register</NavLink>
                 <span className="like-count">👍 {likes}</span>
             </nav>
         </header>

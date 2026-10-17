@@ -200,3 +200,8 @@ footer {
   font-size: 13px;
   color: var(--color-text-muted);
 }
+
+.register-page {
+  max-width: 360px;
+  margin: 0 auto;
+}
