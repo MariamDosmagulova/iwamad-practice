@@ -205,3 +205,14 @@ footer {
   max-width: 360px;
   margin: 0 auto;
 }
+
+
+.events-page,
+.event-page {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.event-page {
+  max-width: 360px;
+}
